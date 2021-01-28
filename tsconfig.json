@@ -12,9 +12,8 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["es2018", "dom"]
   }
 }
