@@ -75,21 +75,23 @@ A quick look at the top-level files and directories included with this template.
 
 5.  **`.editorconfig`**: This file contains the configurations for [EditorConfig](https://editorconfig.org/).
 
-6.  **`angular.json`**: This file contains all the configurations required for your Angular project.
+6. **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
 
-7.  **`.babel.config.js`**: This file tells [babel](https://babeljs.io/) how to transpile the application's code.
+7.  **`angular.json`**: This file contains all the configurations required for your Angular project.
 
-8. **`LICENSE`**: The template is licensed under the MIT licence.
+8.  **`.babel.config.js`**: This file tells [babel](https://babeljs.io/) how to transpile the application's code.
 
-9. **`package-lock.json`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
+9. **`LICENSE`**: The template is licensed under the MIT licence.
 
-10. **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
+10. **`package-lock.json`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
 
-11. **`tsconfig.app.json`**: This file contains auxiliary configurations for your Angular project.
+11. **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
 
-12. **`tsconfig.json`**: This file contains configurations the required configurations for TypeScript.
+12. **`tsconfig.app.json`**: This file contains auxiliary configurations for your Angular project.
 
-13. **`tsconfig.spec.json`**: This is a TypeScript configuration file aimed for application testing.
+13. **`tsconfig.json`**: This file contains configurations the required configurations for TypeScript.
+
+14. **`tsconfig.spec.json`**: This is a TypeScript configuration file aimed for application testing.
 
 
 ## Contribute
