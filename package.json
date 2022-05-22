@@ -31,6 +31,9 @@
     "@angular/platform-browser": "~11.0.6",
     "@angular/platform-browser-dynamic": "~11.0.6",
     "@angular/router": "~11.0.6",
+    "@ngxs/devtools-plugin": "^3.7.3",
+    "@ngxs/logger-plugin": "^3.7.3",
+    "@ngxs/store": "^3.7.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
@@ -47,6 +50,7 @@
     "@storybook/addon-essentials": "^6.4.0",
     "@storybook/addon-interactions": "^6.4.0",
     "@storybook/addon-links": "^6.4.0",
+    "@storybook/addon-storyshots": "^6.5.3",
     "@storybook/angular": "^6.4.0",
     "@storybook/testing-library": "0.0.7",
     "@testing-library/angular": "^10.3.0",
@@ -104,7 +108,8 @@
     },
     "transform": {
       "^.+\\.(ts|html)$": "ts-jest",
-      "^.+\\.js$": "babel-jest"
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.stories\\.[jt]sx?$": "@storybook/addon-storyshots/injectFileName"
     },
     "moduleFileExtensions": [
       "ts",
