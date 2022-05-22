@@ -19,7 +19,8 @@
     "lint": "ng lint",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
-    "build-storybook": "npm run docs:json && build-storybook"
+    "build-storybook": "npm run docs:json && build-storybook",
+    "chromatic": "npx chromatic --project-token=1efae2bb4389"
   },
   "private": true,
   "dependencies": {
@@ -57,6 +58,7 @@
     "@types/jest": "^26.0.20",
     "@types/node": "^12.11.1",
     "babel-loader": "^8.2.2",
+    "chromatic": "^6.5.4",
     "codelyzer": "^6.0.0",
     "jest": "^26.6.3",
     "jest-preset-angular": "^8.3.2",
