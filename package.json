@@ -20,8 +20,7 @@
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook",
-    "init-msw": "msw init src/",
-    "serve-prod": "http-server storybook-static"
+    "init-msw": "msw init src/"
   },
   "private": true,
   "dependencies": {
@@ -55,7 +54,6 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^12.11.1",
     "babel-loader": "^8.2.5",
-    "http-server": "^14.1.1",
     "jest": "^27.5.1",
     "jest-preset-angular": "^11.1.2",
     "msw": "^0.42.0",
