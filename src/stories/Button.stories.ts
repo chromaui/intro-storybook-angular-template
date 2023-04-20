@@ -1,42 +1,51 @@
-// also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/angular/types-6-0';
+import type { Meta, StoryObj } from '@storybook/angular';
 import Button from './button.component';
 
-// More on default export: https://storybook.js.org/docs/angular/writing-stories/introduction#default-export
-export default {
+// More on how to set up stories at: https://storybook.js.org/docs/angular/writing-stories/introduction
+const meta: Meta<Button> = {
   title: 'Example/Button',
   component: Button,
-  // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
+  tags: ['autodocs'],
+  render: (args: Button) => ({
+    props: {
+      backgroundColor: null,
+      ...args,
+    },
+  }),
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: {
+      control: 'color',
+    },
   },
-} as Meta;
-
-// More on component templates: https://storybook.js.org/docs/angular/writing-stories/introduction#using-args
-const Template: Story<Button> = (args: Button) => ({
-  props: args,
-});
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/angular/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Button',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
+export default meta;
+type Story = StoryObj<Button>;
+
+// More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
+export const Primary: Story = {
+  args: {
+    primary: true,
+    label: 'Button',
+  },
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
+export const Secondary: Story = {
+  args: {
+    label: 'Button',
+  },
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+export const Large: Story = {
+  args: {
+    size: 'large',
+    label: 'Button',
+  },
+};
+
+export const Small: Story = {
+  args: {
+    size: 'small',
+    label: 'Button',
+  },
 };
