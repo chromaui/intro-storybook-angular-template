@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testing-latest-angular-with-storybook-9": {
+    "taskbox": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -52,10 +52,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "testing-latest-angular-with-storybook-9:build:production"
+              "buildTarget": "taskbox:build:production"
             },
             "development": {
-              "buildTarget": "testing-latest-angular-with-storybook-9:build:development"
+              "buildTarget": "taskbox:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
           "builder": "@storybook/angular:start-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "testing-latest-angular-with-storybook-9:build",
+            "browserTarget": "taskbox:build",
             "compodoc": true,
             "compodocArgs": ["-e", "json", "-d", "."],
             "port": 6006
@@ -91,7 +91,7 @@
           "builder": "@storybook/angular:build-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "testing-latest-angular-with-storybook-9:build",
+            "browserTarget": "taskbox:build",
             "compodoc": true,
             "compodocArgs": ["-e", "json", "-d", "."],
             "outputDir": "storybook-static"
