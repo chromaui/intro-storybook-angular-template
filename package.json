@@ -16,45 +16,53 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "test": "ng test",
     "storybook": "ng run taskbox:storybook",
     "build-storybook": "ng run taskbox:build-storybook",
-    "init-msw": "msw init src/"
+    "init-msw": "msw init public/"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^19.0.6",
-    "@angular/common": "^19.0.6",
-    "@angular/compiler": "^19.0.6",
-    "@angular/core": "^19.0.6",
-    "@angular/forms": "^19.0.6",
-    "@angular/platform-browser": "^19.0.6",
-    "@angular/platform-browser-dynamic": "^19.0.6",
-    "@angular/router": "^19.0.6",
+    "@angular/common": "^20.3.0",
+    "@angular/compiler": "^20.3.0",
+    "@angular/core": "^20.3.0",
+    "@angular/forms": "^20.3.0",
+    "@angular/platform-browser": "^20.3.0",
+    "@angular/router": "^20.3.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^19.0.7",
-    "@angular/cli": "^19.0.7",
-    "@angular/compiler-cli": "^19.0.6",
-    "@compodoc/compodoc": "^1.1.23",
-    "@storybook/addon-essentials": "^8.3.3",
-    "@storybook/addon-interactions": "^8.3.3",
-    "@storybook/addon-links": "^8.3.3",
-    "@storybook/angular": "^8.3.3",
-    "@storybook/blocks": "^8.3.3",
-    "@storybook/test": "^8.3.3",
-    "@types/jasmine": "~4.3.0",
-    "jasmine-core": "~4.5.0",
+    "@angular-devkit/build-angular": "^20.3.0",
+    "@angular/build": "^20.3.0",
+    "@angular/cli": "^20.3.0",
+    "@angular/compiler-cli": "^20.3.0",
+    "@compodoc/compodoc": "^1.1.30",
+    "@storybook/addon-docs": "^9.1.5",
+    "@storybook/angular": "^9.1.5",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
+    "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "msw": "^2.3.0",
-    "msw-storybook-addon": "^2.0.3",
-    "storybook": "^8.3.3",
-    "typescript": "^5.6.3"
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "msw": "^2.11.1",
+    "msw-storybook-addon": "^2.0.5",
+    "storybook": "^9.1.5",
+    "typescript": "~5.9.2"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
   }
 }

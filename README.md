@@ -47,7 +47,9 @@ A quick look at the top-level files and directories included with this template.
 
     .
     ├── .storybook
+    ├── .vscode
     ├── node_modules
+    ├── public
     ├── src
     ├── .editorconfig
     ├── .gitignore
@@ -58,32 +60,37 @@ A quick look at the top-level files and directories included with this template.
     ├── tsconfig.app.json
     ├── tsconfig.json
     ├── tsconfig.spec.json
-    ├── tslint.json
     └── README.md
 
 1.  **`.storybook`**: This directory contains Storybook's [configuration](https://storybook.js.org/docs/react/configure/overview) files.
 
-2.  **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
+2.  **`.vscode`**: This directory contains [Visual Studio Code](https://code.visualstudio.com/) specific settings, like recommended extensions.
 
-3.  **`src`**: This directory will contain all of the code related to what you will see on your application.
+3.  **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
 
-4.  **`.editorconfig`**: This file contains the configurations for [EditorConfig](https://editorconfig.org/).
+4.  **`public`**: This directory will contain the development and production build of the site.
 
-5.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
+5.  **`src`**: This directory will contain all of the code related to what you will see on your application.
 
-6.  **`angular.json`**: This file contains all the configurations required for your Angular project.
+6.  **`.editorconfig`**: This file contains the configurations for [EditorConfig](https://editorconfig.org/).
 
-7.  **`LICENSE`**: The template is licensed under the MIT licence.
+7.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
 
-8.  **`package-lock.json`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
+8.  **`angular.json`**: This file contains all the configurations required for your Angular project.
 
-9.  **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
+9.  **`LICENSE`**: The template is licensed under the MIT licence.
 
-10. **`tsconfig.app.json`**: This file contains auxiliary configurations for your Angular project.
+10. **`package-lock.json`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
 
-11. **`tsconfig.json`**: This file contains configurations the required configurations for TypeScript.
+11. **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
 
-12. **`tsconfig.spec.json`**: This is a TypeScript configuration file aimed for application testing.
+12. **`tsconfig.app.json`**: This file contains auxiliary configurations for your Angular project.
+
+13. **`tsconfig.json`**: This file contains configurations the required configurations for TypeScript.
+
+14. **`tsconfig.spec.json`**: This is a TypeScript configuration file aimed for application testing.
+
+15. **`README.md`**: A text file containing useful reference information about the project.
 
 ## Contribute
 
@@ -92,5 +99,5 @@ If you encounter an issue with the template, we encourage you to open an issue i
 ## Learning Storybook
 
 1. Read our introductory tutorial at [Learn Storybook](https://storybook.js.org/tutorials/intro-to-storybook/angular/en/get-started/).
-2. Learn how to transform your component libraries into design systems in our [Design Systems for Developers](https://storybook.js.org/tutorials/design-systems-for-developers/) tutorial.
-3. See our official documentation at [Storybook](https://storybook.js.org/).
+
+2. See our official documentation at [Storybook](https://storybook.js.org/).
