@@ -42,7 +42,6 @@
     "@angular/compiler-cli": "^21.0.0",
     "@angular/platform-browser-dynamic": "^21.0.0",
     "@compodoc/compodoc": "^1.1.32",
-    "@storybook/addon-a11y": "^10.1.11",
     "@storybook/addon-docs": "^10.1.11",
     "@storybook/angular": "^10.1.11",
     "jsdom": "^27.1.0",
